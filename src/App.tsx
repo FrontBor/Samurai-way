@@ -1,12 +1,20 @@
 import React from 'react';
 import './App.css';
+import {NavBar} from "./components/NavBar";
+import {Profile} from "./components/Profile";
+import {Header} from "./components/Header";
 
-function App() {
-  return (
-    <div className="App">
-     Hello, samurai! Let's go!
-    </div>
-  );
+
+export function App() {
+    return (
+        <div className='app-wrapper'>
+            <NavBar/>
+            <Header/>
+            <Profile/>
+        </div>
+    );
 }
 
-export default App;
+
+
+

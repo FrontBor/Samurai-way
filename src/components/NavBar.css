@@ -1,0 +1,9 @@
+.nav {
+    grid-area: n;
+    background-color: cornflowerblue;
+    padding: 10px;
+}
+
+.nav a:last-child {
+    margin: 30px 0 0 0;
+}
