@@ -1,0 +1,16 @@
+.nav {
+    grid-area: n;
+    background-color: cornflowerblue;
+    padding: 30px 10px 10px 10px;
+}
+
+.item a {
+    color: white;
+    text-decoration: none;
+}
+
+.item a:hover {
+    color: brown;
+    opacity: .5;
+}
+
