@@ -1,9 +1,9 @@
 import React from 'react';
-import css from "./NewPost.module.css";
+import s from "./NewPost.module.css";
 
 export const NewPost = () => {
     return (
-        <div className={css.item}>
+        <div className={s.item}>
             New post
         </div>
     );

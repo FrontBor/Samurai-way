@@ -1,12 +1,12 @@
 import React from 'react';
-import css from './MyPosts.module.css';
+import s from './MyPosts.module.css';
 import {SinglePost} from "./Post/SinglePost";
 import {NewPost} from "./Post/NewPost";
 
 
 export const MyPosts = () => {
     return (
-        <div className={css.post}>
+        <div className={s.post}>
             My post
             <NewPost/>
             <SinglePost massage={'Боря'} like={15}/>

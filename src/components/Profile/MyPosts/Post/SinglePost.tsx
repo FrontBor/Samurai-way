@@ -1,5 +1,5 @@
 import React from 'react';
-import css from "./SinglePost.module.css";
+import s from "./SinglePost.module.css";
 
 type SinglePostType = {
     massage: string
@@ -8,8 +8,8 @@ type SinglePostType = {
 
 export const SinglePost = (props: SinglePostType) => {
     return (
-        <div className={css.item}>
-            <img className={css.img}
+        <div className={s.item}>
+            <img className={s.img}
                  src="https://ixbt.online/gametech/covers/2021/05/31/d80XOIVNlVwHZxl4sh9qBSK3gPLU8Ix7576AiyJo.jpg"
                  alt="#"/>
             <div>
