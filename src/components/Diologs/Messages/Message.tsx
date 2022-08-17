@@ -1,9 +1,11 @@
 import React from 'react';
 import s from "../Messages/Messages.module.css";
 
-type MessageType = {
+export type MessageType = {
     message: string
+    id: number
 }
+
 
 export const Message = (props:MessageType) => {
     return (
