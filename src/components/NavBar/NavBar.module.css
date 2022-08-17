@@ -9,8 +9,12 @@
     text-decoration: none;
 }
 
+.item a.active {
+    color: darkcyan;
+}
+
 .item a:hover {
-    color: brown;
-    opacity: .5;
+    color: silver;
+    opacity: .8;
 }
 

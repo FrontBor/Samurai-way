@@ -7,7 +7,7 @@ import {NewPost} from "./Post/NewPost";
 export const MyPosts = () => {
     return (
         <div className={s.post}>
-            My post
+            <h3>My post</h3>
             <NewPost/>
             <SinglePost massage={'Боря'} like={15}/>
             <SinglePost massage={'Не унывай'} like={60}/>
