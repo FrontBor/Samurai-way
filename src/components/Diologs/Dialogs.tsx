@@ -2,22 +2,23 @@ import React from 'react';
 import s from './Diolog.module.css'
 import {Users} from "./Users/Users";
 import {Message} from "./Messages/Message";
+import {v1} from "uuid";
 
 
 export const Dialogs = () => {
     let dialogsData = [
-        {id: 1, name: 'Боряныч', message: 'Привет мужик!'},
-        {id: 2, name: 'Санечек', message: 'Не грусти'},
-        {id: 3, name: 'Женечек', message: 'И иди к своей цели'},
-        {id: 4, name: 'Кузя', message: 'Будет сложно, но ты справишься'},
-        {id: 5, name: 'Крокодил', message: '!!!'}
+        {id: v1(), name: 'Боряныч', message: 'Привет мужик!'},
+        {id: v1(), name: 'Санечек', message: 'Не грусти'},
+        {id: v1(), name: 'Женечек', message: 'И иди к своей цели'},
+        {id: v1(), name: 'Кузя', message: 'Будет сложно, но ты справишься'},
+        {id: v1(), name: 'Крокодил', message: '!!!'}
     ]
     let messageData = [
-        {id: 1, message: 'Привет мужик!'},
-        {id: 2, message: 'Не грусти'},
-        {id: 3, message: 'И иди к своей цели'},
-        {id: 4, message: 'Будет сложно, но ты справишься'},
-        {id: 5, message: '!!!'}
+        {id: v1(), message: 'Привет мужик!'},
+        {id: v1(), message: 'Не грусти'},
+        {id: v1(), message: 'И иди к своей цели'},
+        {id: v1(), message: 'Будет сложно, но ты справишься'},
+        {id: v1(), message: '!!!'}
     ]
 
     return (

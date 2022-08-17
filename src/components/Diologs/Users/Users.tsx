@@ -5,7 +5,7 @@ import {NavLink} from "react-router-dom";
 
 export type UsersType = {
     name: string
-    id: number
+    id: string
 }
 
 export const Users = (props:UsersType) => {

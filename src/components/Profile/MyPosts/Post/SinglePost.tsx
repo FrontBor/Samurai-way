@@ -4,6 +4,7 @@ import s from "./SinglePost.module.css";
 type SinglePostType = {
     massage: string
     like: number
+    id: string
 }
 
 export const SinglePost = (props: SinglePostType) => {
