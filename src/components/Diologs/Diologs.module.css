@@ -1,15 +1,19 @@
 .dialogs {
     display: grid;
     grid-template-columns: 2fr 10fr;
-    background-color: coral;
+    background-color: cadetblue;
 }
 
 .dialogsItems {
     padding: 10px;
 }
 
-.dialog a.active {
+.dialog a {
     color: white;
+}
+
+.dialog a.active {
+
 }
 
 

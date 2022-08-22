@@ -8,20 +8,42 @@ import {BrowserRouter, Route} from "react-router-dom";
 import {Music} from "./components/Music/Music";
 import {News} from "./components/News/News";
 import {Setting} from "./components/Setting/Setting";
+import {v1} from "uuid";
 
+export type arrayAllDataType = {
+    singlePostData: singlePostData[]
+    dialogs: dialogsDataType[]
+    message: messageDataType[]
+}
 
-export function App() {
+export type singlePostData = {
+    id: string
+    message: string
+    likeCount: number
+}
+
+export type dialogsDataType = {
+    id: string
+    name: string
+    message: string
+}
+export type messageDataType = {
+    id: string
+    message: string
+}
+
+export function App(props:arrayAllDataType) {
     return (
         <BrowserRouter>
             <div className='app-wrapper'>
                 <NavBar/>
                 <Header/>
                 <div className='app-wrapper-content'>
-                    <Route path='/dialogs' component={Dialogs}/>
-                    <Route path='/profile' component={Profile}/>
-                    <Route path='/music' component={Music}/>
-                    <Route path='/news' component={News}/>
-                    <Route path='/setting' component={Setting}/>
+                    <Route path='/dialogs' render={() => <Dialogs dialogs={props.dialogs} message={props.message}/>}/>
+                    <Route path='/profile' render={() => <Profile singlePostData={props.singlePostData}/>}/>
+                    <Route path='/music' render={() => <Music/>}/>
+                    <Route path='/news' render={() => <News/>}/>
+                    <Route path='/setting' render={() => <Setting/>}/>
                 </div>
             </div>
         </BrowserRouter>
